@@ -5,7 +5,7 @@ const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <nav className="bg-white shadow-md w-full">
+        <nav className="bg-white shadow-sm w-full">
             <div className="container max-w-7xl mx-auto xl:px-0 md:px-3 px-2 flex items-center justify-between py-4">
                 {/* Logo */}
                 <div className="lg:text-2xl md:text-xl text-2xl font-bold flex items-center">

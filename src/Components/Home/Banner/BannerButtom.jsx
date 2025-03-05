@@ -12,7 +12,7 @@ const BannerButtom = () => {
     return (
         <div>
             <div className="container mx-auto max-w-7xl py-5 xl:px-0 px-2">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 animate__animated animate__fadeInUp animate__slow">
                     {categories.map((category, index) => (
                         <div
                             key={index}

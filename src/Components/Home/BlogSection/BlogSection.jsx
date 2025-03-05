@@ -55,7 +55,7 @@ const BlogSection = () => {
                         <p className="text-sm text-gray-500">
                             {blogs[0].date} | {blogs[0].comments}
                         </p>
-                        <h3 className="text-lg font-bold mt-1 text-gray-900">{blogs[0].title}</h3>
+                        <h3 className="text-lg font-bold mt-1 text-amber-500">{blogs[0].title}</h3>
                         <p className="text-gray-600 text-sm mt-1">{blogs[0].description}</p>
                         <a className="text-amber-500 font-semibold mt-2 block hover:underline">
                             READ MORE
@@ -74,7 +74,7 @@ const BlogSection = () => {
                             />
                             <div className="p-4 text-left">
                                 <p className="text-sm text-gray-500">{blog.date} | {blog.comments}</p>
-                                <h3 className="text-lg font-bold mt-1 text-gray-900">{blog.title}</h3>
+                                <h3 className="text-lg font-bold mt-1 text-amber-500">{blog.title}</h3>
                                 <p className="text-gray-600 text-sm mt-1">{blog.description}</p>
                             </div>
                         </div>

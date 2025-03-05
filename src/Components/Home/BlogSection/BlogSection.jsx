@@ -38,7 +38,7 @@ const BlogSection = () => {
 
     return (
         <section className="py-12 max-w-7xl mx-auto xl:px-0 px-2 text-center">
-            <h2 className="text-3xl font-bold text-gray-900">FROM OUR BLOG</h2>
+            <h2 className="text-3xl font-bold text-amber-500">FROM OUR BLOG</h2>
             <p className="text-gray-500 mt-2">
                 Heart, hustle, and dedication—every game, every play, every moment counts.
             </p>

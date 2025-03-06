@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Football",
+        "category": "Football",
+        "price": "$30",
+        "image": "https://i.ibb.co.com/LzZBrpzh/football.jpg",
+        "brand": "Puma",
+        "stock": "Available",
+        "description": "A high-quality football designed for professional and casual matches."
+    },
+    {
+        "id": 2,
+        "name": "Basketball",
+        "category": "Basketball",
+        "price": "$25",
+        "image": "https://i.ibb.co.com/C5HtV4wf/bassketball.jpg",
+        "brand": "Spalding",
+        "stock": "Limited",
+        "description": "Durable basketball suitable for both indoor and outdoor courts."
+    },
+    {
+        "id": 3,
+        "name": "Tennis Racket",
+        "category": "Racket Sports",
+        "price": "$50",
+        "image": "https://i.ibb.co.com/XkvTDvQT/tennis-7932067-1280.jpg",
+        "brand": "Wilson",
+        "stock": "In Stock",
+        "description": "Lightweight and durable tennis racket designed for professionals."
+    },
+    {
+        "id": 4,
+        "name": "Cricket Bat",
+        "category": "Cricket",
+        "price": "$40",
+        "image": "https://i.ibb.co.com/ZRpPy0XD/cricket.jpg",
+        "brand": "DSC",
+        "stock": "Out of Stock",
+        "description": "Top-grade cricket bat for powerful strokes and long-lasting durability."
+    },
+    {
+        "id": 5,
+        "name": "Hockey Stick",
+        "category": "Hockey",
+        "price": "$35",
+        "image": "https://i.ibb.co.com/39Sw5QG0/hocky.jpg",
+        "brand": "Adidas",
+        "stock": "Available",
+        "description": "High-performance hockey stick for enhanced gameplay and precision shots."
+    },
+    {
+        "id": 6,
+        "name": "Badminton Racket",
+        "category": "Badminton",
+        "price": "$45",
+        "image": "https://i.ibb.co.com/VYBpFSqh/batmition.jpg",
+        "brand": "Yonex",
+        "stock": "Limited",
+        "description": "Lightweight and flexible badminton racket for speed and control."
+    },
+    {
+        "id": 7,
+        "name": "Table Tennis Paddle",
+        "category": "Table Tennis",
+        "price": "$20",
+        "image": "https://i.ibb.co.com/6RkTv0st/table-tennis-1208385-1280.jpg",
+        "brand": "Stiga",
+        "stock": "Available",
+        "description": "Professional table tennis paddle with a firm grip and strong spin control."
+    },
+    {
+        "id": 8,
+        "name": "Boxing Gloves",
+        "category": "Boxing",
+        "price": "$60",
+        "image": "https://i.ibb.co.com/WvFSRKm6/boxin.jpg",
+        "brand": "Everlast",
+        "stock": "In Stock",
+        "description": "Premium boxing gloves with enhanced padding and wrist support."
+    }
+]

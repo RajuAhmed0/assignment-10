@@ -5,6 +5,8 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa6';
 import { useForm } from 'react-hook-form';
 import { FcGoogle } from 'react-icons/fc';
 import { AuthContext } from '../Provider/AuthProvider';
+import { auth, googleProvider } from '../../Firebase/firebase.config';
+import { signInWithPopup } from 'firebase/auth';
 
 const Register = () => {
     const [passwordVisible, setPasswordVisible] = useState(false);
@@ -40,6 +42,21 @@ const Register = () => {
                 }
             });
     };
+
+
+  // google login 
+  const handleGoogleLogin = () => {
+    signInWithPopup(auth, googleProvider)
+        .then((result) => {
+            console.log("Google Sign-In Success:", result.user);
+            toast.success("Google Login Successful!");
+            navigate(location.state ? location.state : "/");
+        })
+        .catch(error => {
+            console.error("Google Sign-In Error:", error);
+            toast.error("Google Sign-In Failed.");
+        });
+};
 
 
     return (
@@ -130,7 +147,7 @@ const Register = () => {
                 </div>
 
                 <button
-                    // onClick={handleGoogleLogin}
+                    onClick={handleGoogleLogin}
                     className="flex items-center gap-2 font-semibold border-2 py-2 w-full hover:bg-amber-400 hover:text-white justify-center "
                 >
                     <FcGoogle className="text-3xl" /> Login With Google

@@ -6,6 +6,8 @@ import { AuthContext } from '../Provider/AuthProvider';
 import toast, { Toaster } from 'react-hot-toast';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import Swal from 'sweetalert2';
+import { signInWithPopup } from 'firebase/auth';
+import { auth, googleProvider } from '../../Firebase/firebase.config';
 
 const Login = () => {
 
@@ -44,6 +46,23 @@ const Login = () => {
                 }
             });
     };
+
+
+    // google login 
+    const handleGoogleLogin = () => {
+        signInWithPopup(auth, googleProvider)
+            .then((result) => {
+                console.log("Google Sign-In Success:", result.user);
+                toast.success("Google Login Successful!");
+                navigate(location.state ? location.state : "/");
+            })
+            .catch(error => {
+                console.error("Google Sign-In Error:", error);
+                toast.error("Google Sign-In Failed.");
+            });
+    };
+
+
 
 
     return (
@@ -107,7 +126,7 @@ const Login = () => {
 
 
                         <button
-                            // onClick={handleGoogleLogin}
+                            onClick={handleGoogleLogin}
                             className="flex items-center gap-2 font-semibold border-2 py-2 w-full hover:bg-amber-500 hover:text-white justify-center "
                         >
                             <FcGoogle className="text-3xl" /> Login With Google

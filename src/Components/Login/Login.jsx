@@ -1,25 +1,32 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
+import { useForm } from 'react-hook-form';
 import { FcGoogle } from 'react-icons/fc';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../Provider/AuthProvider';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Login = () => {
+
+
+
     return (
         <div>
+            <Toaster position="top-right" />
             <div className='mt-[38px] max-w-[1140px] mx-auto pb-28'>
                 <div className="max-w-[752px] max-h-[750px] mt-11 shadow-xl flex mx-auto font-poppins rounded-md">
                     <div className="bg-white rounded-[5px] p-[73px] mb-[125px] w-[752px]">
                         <h1 className="text-[35px] font-semibold text-center text-amber-400">Login your account</h1>
                         <div className='border my-[50px]'></div>
-                        <form className='p-[21px]'/*  onSubmit={handleSubmit(onSubmit)} */>
+                        <form className='p-[21px]' onSubmit={handleSubmit(onSubmit)}>
                             <div className="mb-4">
 
                                 <label className="block text-gray-700 font-medium mb-2">Email </label>
-                                <input type="email" /* {...register("email")}  */className="w-full railwayFont bg-[#F3F3F3] px-[20px] py-[20.5px]" placeholder="Enter your email address" required />
+                                <input type="email" {...register("email")} className="w-full railwayFont bg-[#F3F3F3] px-[20px] py-[20.5px]" placeholder="Enter your email address" required />
                             </div>
                             <div className="mb-4">
 
                                 <label className="block text-gray-700 font-medium mb-2">Password </label>
-                                <input type="password"  /* {...register("password")} */ className="w-full railwayFont bg-[#F3F3F3] px-[20px] py-[20.5px]" placeholder="Enter your password" required />
+                                <input type="password"  {...register("password")} className="w-full railwayFont bg-[#F3F3F3] px-[20px] py-[20.5px]" placeholder="Enter your password" required />
                             </div>
                             <button
                                 type="submit" to='/'

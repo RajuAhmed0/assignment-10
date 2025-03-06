@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -44,12 +44,12 @@ const Navbar = () => {
                 {/* login and register */}
                 <div className="hidden md:flex items-center space-x-4">
                     <div className="flex gap-4">
-                        <button className="lg:px-6 px-2 lg:py-2 py-1 text-black hover:text-white lg:text-base md:text-sm text-base font-semibold bg-yellow-500 rounded-lg hover:bg-yellow-400 transition duration-300">
+                        <Link to={"/login"}><button className="lg:px-6 px-2 lg:py-2 py-1 text-black hover:text-white lg:text-base md:text-sm text-base font-semibold bg-yellow-500 rounded-lg hover:bg-yellow-400 transition duration-300">
                             Login
-                        </button>
-                        <button className="lg:px-6 px-2 lg:py-2 py-1 text-black hover:text-white lg:text-base md:text-sm text-base font-semibold bg-yellow-500 rounded-lg hover:bg-yellow-400 transition duration-300">
+                        </button></Link>
+                        <Link to={"/register"}><button className="lg:px-6 px-2 lg:py-2 py-1 text-black hover:text-white lg:text-base md:text-sm text-base font-semibold bg-yellow-500 rounded-lg hover:bg-yellow-400 transition duration-300">
                             Register
-                        </button>
+                        </button></Link>
                     </div>
                 </div>
 

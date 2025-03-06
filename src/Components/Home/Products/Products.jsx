@@ -35,7 +35,7 @@ const Products = () => {
                         <div className="mt-2">
                             <span className="text-xl font-bold text-black">${sports.Price}</span>
                         </div>
-                        <Link to={`/view_details/${sports.id}`}>
+                        <Link to={`/view_details/${sports._id}`}>
                             <button className="mt-4 w-full bg-amber-500 text-white py-2  hover:text-black font-semibold hover:bg-yellow-500 transition-all duration-300">
                                 View Details
                             </button>

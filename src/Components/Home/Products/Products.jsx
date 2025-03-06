@@ -5,7 +5,7 @@ const Products = () => {
     const [sportsData, setSportsData] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:4000/sports')
+        fetch('https://assignment-10-server-omega-five.vercel.app/sports')
             .then(res => res.json())
             .then(data => setSportsData(data))
             .catch(error => console.error('Error:', error));

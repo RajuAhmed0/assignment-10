@@ -35,7 +35,7 @@ export const router = createBrowserRouter([
             {
                 path: '/view_details/:id',
                 element: <PrivateRoute><ProductsDetails></ProductsDetails></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:4000/sports/${params.id}`)
+                loader: ({ params }) => fetch(`https://assignment-10-server-omega-five.vercel.app/sports/${params.id}`)
 
             },
             {

@@ -1,12 +1,31 @@
-# React + Vite
+IronGrip Sports
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Site URL: SportsZone (Replace with actual link)
 
-Currently, two official plugins are available:
+About SportsZone
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+SportsZone is your ultimate destination for the latest sports news, live scores, and in-depth analysis. Stay updated with everything happening in the world of sports, from major leagues to emerging talents.
 
-## Expanding the ESLint configuration
+Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Live Scores & Updates – Get real-time scores and game analysis for your favorite sports.
+
+Latest Sports News – Stay informed with breaking news and exclusive reports.
+
+Player & Team Statistics – Access detailed stats and performance metrics.
+
+Video Highlights & Interviews – Watch game highlights, expert analysis, and player interviews.
+
+Community Forum & Discussions – Engage with other sports enthusiasts and share your opinions.
+
+Technologies Used
+
+HTML, CSS, JavaScript
+
+React.js / Next.js
+
+Node.js & Express
+
+MongoDB / PostgreSQL
+
+REST API / GraphQL

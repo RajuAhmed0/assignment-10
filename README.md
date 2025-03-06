@@ -2,9 +2,9 @@ IronGrip Sports
 
 ### Live Site URL:  https://assignment-10-60e0f.web.app/
 
-About SportsZone
+About IronGrip Sports
 
-SportsZone is your ultimate destination for the latest sports news, live scores, and in-depth analysis. Stay updated with everything happening in the world of sports, from major leagues to emerging talents.
+IronGrip Sports is your ultimate destination for the latest sports news, live scores, and in-depth analysis. Stay updated with everything happening in the world of sports, from major leagues to emerging talents.
 
 Features
 

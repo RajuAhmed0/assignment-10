@@ -1,6 +1,6 @@
 IronGrip Sports
 
-Live Site URL: SportsZone (Replace with actual link)
+### Live Site URL:  https://assignment-10-60e0f.web.app/
 
 About SportsZone
 

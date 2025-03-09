@@ -5,7 +5,7 @@ const All_Sports_Equipment = () => {
   const [sportsData, setSportsData] = useState([]);
   console.log(sportsData);
   
-
+  
   useEffect(() => {
     fetch('http://localhost:4000/equipment')
       .then(res => res.json())

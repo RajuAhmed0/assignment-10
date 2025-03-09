@@ -11,10 +11,9 @@ const My_Equipment_List = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
+        if (!user) return; // Ensure user is logged in before making a request
 
-        fetch(
-            `http://localhost:4000/myEquipment`
-        )
+        fetch(`http://localhost:4000/myEquipment?email=${user.email}`)
             .then((response) => response.json())
             .then((data) => {
                 setProducts(data);
@@ -24,8 +23,8 @@ const My_Equipment_List = () => {
                 setError(err.message);
                 setLoading(false);
             });
-    }
-        , [user]);
+    }, [user]);
+
 
     if (loading) {
         return (
@@ -95,7 +94,7 @@ const My_Equipment_List = () => {
 
             <div className="min-h-[620px] p-4 md:mx-10">
                 <Fade direction="down">
-                    <h1 className="text-2xl text-blue-500 my-9 font-bold">
+                    <h1 className="text-2xl text-amber-500 my-9 font-bold">
                         My Equipment List ({products.length})
                     </h1>
                 </Fade>

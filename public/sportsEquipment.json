@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        
         "name": "Football",
         "category": "Football",
         "price": "$30",
@@ -10,7 +10,7 @@
         "description": "A high-quality football designed for professional and casual matches."
     },
     {
-        "id": 2,
+        
         "name": "Basketball",
         "category": "Basketball",
         "price": "$25",
@@ -20,7 +20,7 @@
         "description": "Durable basketball suitable for both indoor and outdoor courts."
     },
     {
-        "id": 3,
+        
         "name": "Tennis Racket",
         "category": "Racket Sports",
         "price": "$50",
@@ -30,7 +30,7 @@
         "description": "Lightweight and durable tennis racket designed for professionals."
     },
     {
-        "id": 4,
+        
         "name": "Cricket Bat",
         "category": "Cricket",
         "price": "$40",
@@ -40,7 +40,7 @@
         "description": "Top-grade cricket bat for powerful strokes and long-lasting durability."
     },
     {
-        "id": 5,
+        
         "name": "Hockey Stick",
         "category": "Hockey",
         "price": "$35",
@@ -50,7 +50,7 @@
         "description": "High-performance hockey stick for enhanced gameplay and precision shots."
     },
     {
-        "id": 6,
+        
         "name": "Badminton Racket",
         "category": "Badminton",
         "price": "$45",
@@ -60,7 +60,7 @@
         "description": "Lightweight and flexible badminton racket for speed and control."
     },
     {
-        "id": 7,
+        
         "name": "Table Tennis Paddle",
         "category": "Table Tennis",
         "price": "$20",
@@ -70,7 +70,7 @@
         "description": "Professional table tennis paddle with a firm grip and strong spin control."
     },
     {
-        "id": 8,
+        
         "name": "Boxing Gloves",
         "category": "Boxing",
         "price": "$60",

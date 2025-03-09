@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 
 const All_Sports_Equipment = () => {
   const [sportsData, setSportsData] = useState([]);
+  console.log(sportsData);
+  
 
   useEffect(() => {
-    fetch('/sportsEquipment.json')
+    fetch('http://localhost:4000/equipment')
       .then(res => res.json())
       .then(data => setSportsData(data))
       .catch(error => console.error('Error:', error));
@@ -26,8 +28,8 @@ const All_Sports_Equipment = () => {
             </tr>
           </thead>
           <tbody>
-            {sportsData.map((item) => (
-              <tr key={item.id} className="border-b hover:bg-gray-100">
+            {sportsData.map((item, i) => (
+              <tr key={i} className="border-b hover:bg-gray-100">
                 <td className="p-4 text-center">
                   <img
                     src={item.image}
@@ -40,7 +42,7 @@ const All_Sports_Equipment = () => {
                 <td className="p-4 text-center text-amber-600 font-semibold">{item.price}</td>
                 <td className="p-4 text-center">
                   <Link
-                    to={`/view_details/${item.id}`}
+                    to={`/all_equipment_view_details/${item._id}`}
                     className="bg-amber-500 text-white px-4 py-2 rounded-md hover:bg-orange-400 transition inline-block"
                   >
                     View Details
@@ -54,8 +56,8 @@ const All_Sports_Equipment = () => {
 
       {/* Mobile-Friendly Card Layout (Visible on Small Screens) */}
       <div className="grid grid-cols-1 sm:hidden gap-4 mt-8">
-        {sportsData.map((item) => (
-          <div key={item.id} className="border p-4 shadow-lg rounded-lg bg-white">
+        {sportsData.map((item, i) => (
+          <div key={i} className="border p-4 shadow-lg rounded-lg bg-white">
             <img
               src={item.image}
               alt={item.name}
@@ -66,7 +68,7 @@ const All_Sports_Equipment = () => {
             <p className="text-center text-amber-600 font-semibold">{item.price}</p>
             <div className="flex justify-center mt-4">
               <Link
-                to={`/view_details/${item.id}`}
+                to={`/all_equipment_view_details/${item._id}`}
                 className="bg-amber-500 text-white px-4 py-2 rounded-md hover:bg-orange-400 transition"
               >
                 View Details

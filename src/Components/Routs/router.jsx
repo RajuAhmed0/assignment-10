@@ -9,6 +9,8 @@ import ProductsDetails from "../Pages/ProductsDetails/ProductsDetails";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
 import PrivateRoute from "./PrivateRoute";
+import Equipment_View_details from "../Pages/All_Sports_Equipment/Equipment_View_details";
+
 
 export const router = createBrowserRouter([
     {
@@ -37,6 +39,11 @@ export const router = createBrowserRouter([
                 element: <PrivateRoute><ProductsDetails></ProductsDetails></PrivateRoute>,
                 loader: ({ params }) => fetch(`https://assignment-10-server-omega-five.vercel.app/sports/${params.id}`)
 
+            },
+            {
+                path: '/all_equipment_view_details/:id',
+                element: <PrivateRoute><Equipment_View_details></Equipment_View_details></PrivateRoute>,
+                loader: ({ params }) => fetch(`http://localhost:4000/equipment/${params.id}`)
             },
             {
                 path: '/login',

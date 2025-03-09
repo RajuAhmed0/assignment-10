@@ -16,7 +16,7 @@ const All_Sports_Equipment = () => {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-10">
       <h2 className="text-3xl font-bold text-center mb-8">All Sports Equipment</h2>
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto md:block hidden">
         <table className="w-full min-w-full border shadow-lg">
           <thead>
             <tr className="text-amber-500 bg-gray-100">

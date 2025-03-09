@@ -31,7 +31,7 @@ const Login = () => {
                     confirmButtonColor: "#3085d6",
                     confirmButtonText: "OK"
                 }).then(() => {
-                    navigate(location.state ? location.state : "/");
+                    navigate("/");
                 });
             })
             .catch(error => {
@@ -54,7 +54,7 @@ const Login = () => {
             .then((result) => {
                 console.log("Google Sign-In Success:", result.user);
                 toast.success("Google Login Successful!");
-                navigate(location.state ? location.state : "/");
+                navigate("/");
             })
             .catch(error => {
                 console.error("Google Sign-In Error:", error);

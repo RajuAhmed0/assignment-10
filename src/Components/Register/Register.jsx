@@ -7,6 +7,7 @@ import { FcGoogle } from 'react-icons/fc';
 import { AuthContext } from '../Provider/AuthProvider';
 import { auth, googleProvider } from '../../Firebase/firebase.config';
 import { signInWithPopup } from 'firebase/auth';
+import Swal from 'sweetalert2';
 
 const Register = () => {
     const [passwordVisible, setPasswordVisible] = useState(false);
@@ -20,12 +21,19 @@ const Register = () => {
         createUser(data.email, data.password)
             .then((userInfo) => {
                 console.log("User created:", userInfo);
-                toast.success("Account created successfully!");
+                // toast.success("Account created successfully!");
+                Swal.fire({
+                    title: "Login Successful!",
+                    text: "Welcome back! You are now logged in.",
+                    icon: "success",
+                    confirmButtonColor: "#3085d6",
+                    confirmButtonText: "OK"
+                })
+
                 profileUpdate(data.name, data.photoURL)
                     .then(() => {
                         console.log("Profile updated successfully");
-                        navigate(location.state ? location.state : "/login")
-
+                        navigate(location.state ? location.state : "/")
                     })
                     .catch((err) => {
                         console.error("Profile update error:", err);
@@ -44,19 +52,19 @@ const Register = () => {
     };
 
 
-  // google login 
-  const handleGoogleLogin = () => {
-    signInWithPopup(auth, googleProvider)
-        .then((result) => {
-            console.log("Google Sign-In Success:", result.user);
-            toast.success("Google Login Successful!");
-            navigate(location.state ? location.state : "/");
-        })
-        .catch(error => {
-            console.error("Google Sign-In Error:", error);
-            toast.error("Google Sign-In Failed.");
-        });
-};
+    // google login 
+    const handleGoogleLogin = () => {
+        signInWithPopup(auth, googleProvider)
+            .then((result) => {
+                console.log("Google Sign-In Success:", result.user);
+                toast.success("Google Login Successful!");
+                navigate(location.state ? location.state : "/");
+            })
+            .catch(error => {
+                console.error("Google Sign-In Error:", error);
+                toast.error("Google Sign-In Failed.");
+            });
+    };
 
 
     return (

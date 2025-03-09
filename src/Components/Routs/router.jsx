@@ -10,6 +10,7 @@ import Login from "../Login/Login";
 import Register from "../Register/Register";
 import PrivateRoute from "./PrivateRoute";
 import Equipment_View_details from "../Pages/All_Sports_Equipment/Equipment_View_details";
+import View_Details from "../Pages/My_Equipment_List/View_Details/View_Details";
 
 
 export const router = createBrowserRouter([
@@ -44,6 +45,11 @@ export const router = createBrowserRouter([
                 path: '/all_equipment_view_details/:id',
                 element: <PrivateRoute><Equipment_View_details></Equipment_View_details></PrivateRoute>,
                 loader: ({ params }) => fetch(`http://localhost:4000/equipment/${params.id}`)
+            },
+            {
+                path: '/productsUpdate/:id',
+                element: <PrivateRoute><View_Details></View_Details></PrivateRoute>,
+                loader: ({ params }) => fetch(`http://localhost:4000/myEquipment/${params.id}`)
             },
             {
                 path: '/login',

@@ -43,7 +43,7 @@ const My_Equipment_List = () => {
         return (
             <div className="min-h-[500px] ">
                 <Fade direction="down">
-                    <div className="text-center font-bold  text-3xl mt-10">
+                    <div className="text-center font-bold  text-3xl mt-8">
                         No equipment found for your email.
                     </div>
                 </Fade>

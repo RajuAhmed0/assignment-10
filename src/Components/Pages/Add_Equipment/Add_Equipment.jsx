@@ -25,7 +25,7 @@ const Add_Equipment = () => {
         console.log(newEquipment);
         
         // POST the new product to database
-        fetch(`http://localhost:4000/myEquipment`, {
+        fetch(`https://assignment-10-server-omega-five.vercel.app/myEquipment`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

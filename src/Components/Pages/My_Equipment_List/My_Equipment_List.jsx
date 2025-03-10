@@ -13,7 +13,7 @@ const My_Equipment_List = () => {
     useEffect(() => {
         if (!user) return; // Ensure user is logged in before making a request
 
-        fetch(`http://localhost:4000/myEquipment?email=${user.email}`)
+        fetch(`https://assignment-10-server-omega-five.vercel.app/myEquipment?email=${user.email}`)
             .then((response) => response.json())
             .then((data) => {
                 setProducts(data);
@@ -74,7 +74,7 @@ const My_Equipment_List = () => {
             confirmButtonText: "Yes, delete it!",
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:4000/myEquipment/${_id}`, {
+                fetch(`https://assignment-10-server-omega-five.vercel.app/myEquipment/${_id}`, {
                     method: "DELETE",
                 })
                     .then((res) => res.json())

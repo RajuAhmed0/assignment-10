@@ -44,12 +44,12 @@ export const router = createBrowserRouter([
             {
                 path: '/all_equipment_view_details/:id',
                 element: <PrivateRoute><Equipment_View_details></Equipment_View_details></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:4000/equipment/${params.id}`)
+                loader: ({ params }) => fetch(`https://assignment-10-server-omega-five.vercel.app/equipment/${params.id}`)
             },
             {
                 path: '/productsUpdate/:id',
                 element: <PrivateRoute><View_Details></View_Details></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:4000/myEquipment/${params.id}`)
+                loader: ({ params }) => fetch(`https://assignment-10-server-omega-five.vercel.app/myEquipment/${params.id}`)
             },
             {
                 path: '/login',

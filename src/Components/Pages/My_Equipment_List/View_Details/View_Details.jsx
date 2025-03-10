@@ -49,7 +49,7 @@ const View_Details = () => {
         }
 
         // Send PUT request to update the product
-        fetch(`https://assignment-10-server-omega-five.vercel.app/myEquipment/${product._id}`, {
+        fetch(`https://assignment-10-server2.vercel.app/myEquipment/${product._id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",

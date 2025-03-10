@@ -38,18 +38,18 @@ export const router = createBrowserRouter([
             {
                 path: '/view_details/:id',
                 element: <PrivateRoute><ProductsDetails></ProductsDetails></PrivateRoute>,
-                loader: ({ params }) => fetch(`https://assignment-10-server-omega-five.vercel.app/sports/${params.id}`)
+                loader: ({ params }) => fetch(`https://assignment-10-server2.vercel.app/sports/${params.id}`)
 
             },
             {
                 path: '/all_equipment_view_details/:id',
                 element: <PrivateRoute><Equipment_View_details></Equipment_View_details></PrivateRoute>,
-                loader: ({ params }) => fetch(`https://assignment-10-server-omega-five.vercel.app/equipment/${params.id}`)
+                loader: ({ params }) => fetch(`https://assignment-10-server2.vercel.app/equipment/${params.id}`)
             },
             {
                 path: '/productsUpdate/:id',
                 element: <PrivateRoute><View_Details></View_Details></PrivateRoute>,
-                loader: ({ params }) => fetch(`https://assignment-10-server-omega-five.vercel.app/myEquipment/${params.id}`)
+                loader: ({ params }) => fetch(`https://assignment-10-server2.vercel.app/myEquipment/${params.id}`)
             },
             {
                 path: '/login',

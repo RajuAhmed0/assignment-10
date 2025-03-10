@@ -7,7 +7,7 @@ const All_Sports_Equipment = () => {
   const [isAscending, setIsAscending] = useState(true);
 
   useEffect(() => {
-    fetch('https://assignment-10-server-omega-five.vercel.app/equipment')
+    fetch('https://assignment-10-server2.vercel.app/equipment')
       .then(res => res.json())
       .then(data => {
         setSportsData(data);
